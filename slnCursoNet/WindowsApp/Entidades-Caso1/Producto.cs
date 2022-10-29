@@ -13,8 +13,8 @@ namespace WindowsApp.Entidades
         public decimal PrecioCosto { set; get; }
         public double Margen { set; get; }  
         public double IVA { set; get; }
-        public decimal PrecioBruto { get; }
-        public decimal PrecioVenta { get; }
+        public decimal PrecioBruto { set; get; }
+        public decimal PrecioVenta { set; get; }
         public string Proveedor { set; get; }
         public string Categoria { set; get; }   
         public string SubCategoria { set; get; }
