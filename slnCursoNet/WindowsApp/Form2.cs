@@ -24,10 +24,18 @@ namespace WindowsApp.Entidades_Caso1
         {
             Producto producto1 = new Producto();
 
-            producto1.PrecioBruto = producto1.PrecioCosto + Convert.ToDecimal(producto1.Margen);
-            producto1.PrecioVenta = producto1.PrecioBruto + Convert.ToDecimal(producto1.IVA);
+            producto1.PrecioCosto = 100.5m;
+            producto1.IVA = 0.21;
 
-            Convert.ToDecimal(1 + producto1.IVA);
+            producto1.PrecioBruto = producto1.PrecioCosto + Convert.ToDecimal(producto1.Margen);
+
+            producto1.PrecioVenta = producto1.PrecioBruto * (Convert.ToDecimal(1 + producto1.IVA)) ;
+
+          
+
+
+            MessageBox.Show($"Precio Bruto:{producto1.PrecioBruto}\n" +
+                $"Precio Venta: {producto1.PrecioVenta}");    
         }
     }
 }
