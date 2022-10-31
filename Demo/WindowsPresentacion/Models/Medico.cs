@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsPresentacion.Models
 {
-    internal class Director
+    public class Medico
     {
 
         public string Nombre { get; set; }
@@ -15,8 +15,5 @@ namespace WindowsPresentacion.Models
 
         public int Matricula { get; set; }
         public string Especialidad { get; set; }
-
-        public string PostGrado { get; set; }
-
     }
 }

@@ -33,17 +33,17 @@
             // 
             // btnCrearObjetos
             // 
-            this.btnCrearObjetos.Location = new System.Drawing.Point(146, 180);
+            this.btnCrearObjetos.Location = new System.Drawing.Point(479, 88);
             this.btnCrearObjetos.Name = "btnCrearObjetos";
-            this.btnCrearObjetos.Size = new System.Drawing.Size(155, 53);
+            this.btnCrearObjetos.Size = new System.Drawing.Size(212, 23);
             this.btnCrearObjetos.TabIndex = 0;
-            this.btnCrearObjetos.Text = "Crear Objeto";
+            this.btnCrearObjetos.Text = "Crear Objetos";
             this.btnCrearObjetos.UseVisualStyleBackColor = true;
             this.btnCrearObjetos.Click += new System.EventHandler(this.btnCrearObjetos_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCrearObjetos);

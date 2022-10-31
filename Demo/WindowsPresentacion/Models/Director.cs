@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace WindowsPresentacion.Models
 {
-    internal class Paciente
+    public class Director
     {
+
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public DateTime FechaNacimiento { get; set; }
-        public string NroHitoriaClinica { get; set; }
 
+        public int Matricula { get; set; }
+        public string Especialidad { get; set; }
+
+        public string PostGrado { get; set; }
     }
 }
