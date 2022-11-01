@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+namespace WindowsApp.Entidades_Caso1
 {
     public class Producto
     {

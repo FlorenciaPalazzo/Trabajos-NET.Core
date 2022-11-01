@@ -33,7 +33,7 @@
             // 
             // btnCargar
             // 
-            this.btnCargar.Location = new System.Drawing.Point(282, 177);
+            this.btnCargar.Location = new System.Drawing.Point(116, 78);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(242, 73);
             this.btnCargar.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(457, 225);
             this.Controls.Add(this.btnCargar);
             this.Name = "Form2";
             this.Text = "Form2";

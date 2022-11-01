@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+namespace WindowsApp.Entidades_Caso1
 {
-    public class Proveedor
+    public class Empresa
     {
         public string Nombre { set; get; }
         public string CUIT { set; get; }    

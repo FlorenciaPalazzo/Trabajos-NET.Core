@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WindowsApp.Entidades;
+
 using WindowsApp.Entidades_Caso1;
 
 namespace WindowsApp.Entidades_Caso1

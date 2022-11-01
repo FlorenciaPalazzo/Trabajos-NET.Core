@@ -4,15 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+namespace WindowsApp.Entidades_Caso1
 {
-    public class Vendedor
+    public class Vendedor : Persona
     {
-        public string Nombre { set; get; }
-        public string Apellido { set; get; }
+
+        public Vendedor(string nombre, string apellido, string email, string telefono, string direccion, string dni): base(nombre, apellido, email, telefono, direccion)
+        {
+            DNI = dni;
+        }
+       
         public string DNI { set; get; }
-        public string Email { set; get; }
-        public string Telefono { set; get; }
-        public string Direccion { set; get; }
+     
     }
 }

@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsApp.Entidades
+
+namespace WindowsApp.Entidades_Caso1
 {
-    public class ClienteIndividuo
+    public class ClienteIndividuo : Persona
     {
-        public string Nombre { set; get; }
-        public string Apellido { set; get; }
+        public ClienteIndividuo(string nombre, string apellido, string email, string telefono, string direccion, string cuit):base(nombre, apellido, email, telefono,direccion)
+        {
+            CUIT = cuit;
+        }
+      
         public string CUIT { set; get; }
         
-        public string Email { set; get; }
-        public string Telefono { set; get; }
-        public string Direccion { set; get; }
+ 
     }
 }
