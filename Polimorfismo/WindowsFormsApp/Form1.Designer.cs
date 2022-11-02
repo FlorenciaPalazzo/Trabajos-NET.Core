@@ -32,11 +32,12 @@
             this.btnMover = new System.Windows.Forms.Button();
             this.btnPersona = new System.Windows.Forms.Button();
             this.btnAnimales = new System.Windows.Forms.Button();
+            this.btnTransporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAfinar
             // 
-            this.btnAfinar.Location = new System.Drawing.Point(178, 36);
+            this.btnAfinar.Location = new System.Drawing.Point(178, 12);
             this.btnAfinar.Name = "btnAfinar";
             this.btnAfinar.Size = new System.Drawing.Size(75, 23);
             this.btnAfinar.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnMover
             // 
-            this.btnMover.Location = new System.Drawing.Point(178, 76);
+            this.btnMover.Location = new System.Drawing.Point(178, 61);
             this.btnMover.Name = "btnMover";
             this.btnMover.Size = new System.Drawing.Size(75, 23);
             this.btnMover.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // btnPersona
             // 
-            this.btnPersona.Location = new System.Drawing.Point(178, 120);
+            this.btnPersona.Location = new System.Drawing.Point(178, 107);
             this.btnPersona.Name = "btnPersona";
             this.btnPersona.Size = new System.Drawing.Size(75, 23);
             this.btnPersona.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             // btnAnimales
             // 
-            this.btnAnimales.Location = new System.Drawing.Point(178, 166);
+            this.btnAnimales.Location = new System.Drawing.Point(178, 151);
             this.btnAnimales.Name = "btnAnimales";
             this.btnAnimales.Size = new System.Drawing.Size(75, 23);
             this.btnAnimales.TabIndex = 3;
@@ -74,11 +75,22 @@
             this.btnAnimales.UseVisualStyleBackColor = true;
             this.btnAnimales.Click += new System.EventHandler(this.btnAnimales_Click);
             // 
+            // btnTransporte
+            // 
+            this.btnTransporte.Location = new System.Drawing.Point(178, 199);
+            this.btnTransporte.Name = "btnTransporte";
+            this.btnTransporte.Size = new System.Drawing.Size(75, 23);
+            this.btnTransporte.TabIndex = 4;
+            this.btnTransporte.Text = "Transporte";
+            this.btnTransporte.UseVisualStyleBackColor = true;
+            this.btnTransporte.Click += new System.EventHandler(this.btnTransporte_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 248);
+            this.Controls.Add(this.btnTransporte);
             this.Controls.Add(this.btnAnimales);
             this.Controls.Add(this.btnPersona);
             this.Controls.Add(this.btnMover);
@@ -95,6 +107,7 @@
         private System.Windows.Forms.Button btnMover;
         private System.Windows.Forms.Button btnPersona;
         private System.Windows.Forms.Button btnAnimales;
+        private System.Windows.Forms.Button btnTransporte;
     }
 }
 

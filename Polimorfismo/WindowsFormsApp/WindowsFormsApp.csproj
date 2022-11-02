@@ -96,6 +96,10 @@
       <Project>{42b50e8a-fd5d-42e5-bcef-3862918c334d}</Project>
       <Name>Libreria_windows</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LibTransporte\LibTransporte.csproj">
+      <Project>{1c3a19bf-f93e-40e1-9af1-005fd3ec7c08}</Project>
+      <Name>LibTransporte</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

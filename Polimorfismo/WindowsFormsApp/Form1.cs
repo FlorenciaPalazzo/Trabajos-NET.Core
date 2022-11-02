@@ -11,6 +11,7 @@ using LibAjedrez.Piezas;
 using LibAnimales.Animales;
 using LibPersona.Personas;
 using Libreria_windows.Instrumentos;
+using LibTransporte;
 
 namespace WindowsFormsApp
 {
@@ -64,6 +65,15 @@ namespace WindowsFormsApp
 
             Loro loro = new Loro("35", "0.20", "1", "Pepe", "Plumas");
             MessageBox.Show($"{loro.Imprimir()}{loro.ImprimirComida("Frugívoro")}");
+        }
+
+        private void btnTransporte_Click(object sender, EventArgs e)
+        {
+            Avion avion = new Avion("5000",50,500,1000,4);
+            MessageBox.Show($" {avion.ImprimirCaracteristicas()},{avion.Ascender()},{avion.Descender()},{avion.Acelerar(100)},{avion.Desacelerar(200)}");
+
+            Auto auto = new Auto("200",4,120,"AZC123");
+            MessageBox.Show($"{auto.ImprimirCaracteristicas()},{auto.Acelerar(20)},{auto.Desacelerar(50)},{auto.doblarAIzq()},{auto.doblarADcha()}");
         }
     }
 }
