@@ -7,11 +7,18 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmMedico
+    /// <summary>
+    /// Antes era una clase Concreta. Ahora es estatica.
+    /// </summary>
+    public static class AdmMedico
     {
-        List<Medico> medicos;
+        static List<Medico> medicos;
 
-        public List<Medico> Listar()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public static List<Medico> Listar()
         {
             medicos = new List<Medico>();
 
@@ -26,7 +33,7 @@ namespace Negocio
             
         }
 
-        public List<Medico> Listar(string especialidad)
+        public static List<Medico> Listar(string especialidad)
         {
             List<Medico> espMedicos = new List<Medico>();
 
@@ -41,19 +48,19 @@ namespace Negocio
 
             return espMedicos;
         }
-        public int Insertar(Medico medicos)
+        public static int Insertar(Medico medicos)
         {
             //TODO…return 0
 
             return 0;
         }
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO…return 0
             return 0;
         }
 
-        public List<Medico> TraerUno(int id)
+        public static List<Medico> TraerUno(int id)
         {
             //TODO
             return null;

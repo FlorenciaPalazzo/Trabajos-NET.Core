@@ -7,34 +7,34 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class DacMedico
+    public static class DacMedico
     {
-        List<Medico> medicos;
+        static List<Medico> medicos;
 
-        public List<Medico> Select()
+        public static List<Medico> Select()
         {
             //TODO
             medicos = new List<Medico>();
             return null;
         }
-        public List<Medico> Select(string especialidad)
+        public static List<Medico> Select(string especialidad)
         {
             //TODO
             medicos = new List<Medico>();
             return null;
         }
-        public int Insert(Medico medicos)
+        public static int Insert(Medico medicos)
         {
             //TODO
             return 0;
         }
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO
             return 0;
         }
 
-        public List<Medico> SelectById(int id)
+        public static List<Medico> SelectById(int id)
         {
             //TODO
             return null;

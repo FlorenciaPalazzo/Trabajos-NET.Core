@@ -7,12 +7,12 @@ using WindowsPresentacionColecciones.Models;
 
 namespace WindowsPresentacionColecciones.Colecciones
 {
-    public class AdminProducto
+    public static class AdminProducto
     {
         //declarar
-        List<Producto> productos;
+        static List<Producto> productos;
 
-        public List<Producto> Carga()
+        public static List<Producto> Carga()
         {
 
             // crear la lista
@@ -36,20 +36,20 @@ namespace WindowsPresentacionColecciones.Colecciones
 
         }
 
-        public List<Producto> TraerPorCategoria(string categoria)
+        public static List<Producto> TraerPorCategoria(string categoria)
         {
             //TODO Falta programar el método TraerPorCategoria
             return null;
         }
 
-        public int Insertar(Producto producto)
+        public static int Insertar(Producto producto)
         {
             //TODO Falta programar el método Insertar
             return 0;
         }
 
 
-        public int Eliminar(Producto producto)
+        public static int Eliminar(Producto producto)
         {
             //TODO Falta programar el método Eliminar
             return 0;

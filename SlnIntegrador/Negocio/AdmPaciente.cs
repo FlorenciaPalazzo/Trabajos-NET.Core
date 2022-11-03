@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmPaciente
+    public static class AdmPaciente
     {
-        List<Paciente> pacientes;
+        static List<Paciente> pacientes;
 
-        public List<Paciente> Insertar()
+        public static List<Paciente> Insertar()
         {
             //Creo la lista
             pacientes = new List<Paciente>();
@@ -27,17 +27,17 @@ namespace Negocio
             return pacientes;
         }
 
-        public int Insertar(Paciente pacientes)
+        public static int Insertar(Paciente pacientes)
         {
             //TODO
             return 0;
         }
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO
             return 0;
         }
-        public List<Paciente> TraerUno(string nroHistoriaClinica){
+        public static  List<Paciente> TraerUno(string nroHistoriaClinica){
 
             //TODO
             return null;

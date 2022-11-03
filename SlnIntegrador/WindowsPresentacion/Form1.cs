@@ -22,23 +22,20 @@ namespace WindowsPresentacion
         private void btnMostrar_Click(object sender, EventArgs e)
         {
 
-            AdmMedico admMedico = new AdmMedico();          
-            gridMedicos.DataSource = admMedico.Listar();
+                   
+            gridMedicos.DataSource = AdmMedico.Listar();
 
-            foreach (var item in admMedico.Listar("Clinico"))
+            foreach (var item in AdmMedico.Listar("Clinico"))
             {
                 lstMedicosClinicos.Items.Add($"{item.Nombre} {item.Apellido}");
             }
 
-
-            AdmPaciente admPaciente = new AdmPaciente();
-            gridPacientes.DataSource = admPaciente.Insertar();
-
+          
+            gridPacientes.DataSource = AdmPaciente.Insertar();
 
 
-            AdmHabitacion admHabitacion = new AdmHabitacion();
 
-            foreach (var item in admHabitacion.Listar()) 
+            foreach (var item in AdmHabitacion.Listar()) 
 	        {
                 lstHabitaciones.Items.Add($"{item.Numero} {item.Estado}");
 	        }

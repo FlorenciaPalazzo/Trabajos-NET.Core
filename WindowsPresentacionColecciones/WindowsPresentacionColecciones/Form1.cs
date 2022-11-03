@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsPresentacionColecciones.Models;
 using WindowsPresentacionColecciones.Colecciones;
+using WindowsPresentacionColecciones.PruebaStatic;
 
 namespace WindowsPresentacionColecciones
 {
@@ -43,9 +44,9 @@ namespace WindowsPresentacionColecciones
 
             List<Producto> lista;
 
-            AdminProducto adminProducto = new AdminProducto();
+            
 
-            lista = adminProducto.Carga();
+            lista = AdminProducto.Carga();
 
 
             gridProductos.DataSource = lista;
@@ -54,6 +55,20 @@ namespace WindowsPresentacionColecciones
             {
                 lstPrecioProducto.Items.Add(producto.Nombre + " Precio:" + producto.Precio.ToString());
             }
+
+        }
+
+        private void btnCrearCliente_Click(object sender, EventArgs e)
+        {
+            Cliente cliente1 = new Cliente("Florencia");
+            Cliente cliente2 = new Cliente("Maria");
+
+            MessageBox.Show($"{Cliente.Instancias.ToString()}");
+
+            Cliente cliente3 = new Cliente("Carlos");
+            Cliente cliente4 = new Cliente("Ruben");
+
+            MessageBox.Show($"{Cliente.Instancias.ToString()}");
 
         }
     }
