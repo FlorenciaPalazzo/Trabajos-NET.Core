@@ -82,5 +82,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibEmpleado\LibEmpleado.csproj">
+      <Project>{3a3658f5-ea6b-4cbd-8b96-e244dee5aa53}</Project>
+      <Name>LibEmpleado</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WindowsPresentacionColecciones.Models;
 using WindowsPresentacionColecciones.Colecciones;
 using WindowsPresentacionColecciones.PruebaStatic;
+using LibEmpleado;
 
 namespace WindowsPresentacionColecciones
 {
@@ -44,10 +45,7 @@ namespace WindowsPresentacionColecciones
 
             List<Producto> lista;
 
-            
-
             lista = AdminProducto.Carga();
-
 
             gridProductos.DataSource = lista;
 
@@ -69,6 +67,25 @@ namespace WindowsPresentacionColecciones
             Cliente cliente4 = new Cliente("Ruben");
 
             MessageBox.Show($"{Cliente.Instancias.ToString()}");
+
+        }
+
+       //Trabajo Clientes:Practica static
+        private void btnComision_Click(object sender, EventArgs e)
+        {
+            Empleado empleado1 = new Empleado(25, "Jose", "Perez");
+            MessageBox.Show($"{Empleado.Comision.ToString()}");
+
+
+            Empleado empleado2 = new Empleado(28, "Martin", "Gomez");
+            Empleado.Comision = 5002;
+            MessageBox.Show($"{Empleado.Comision.ToString()}");
+
+            Empleado empleado3 = new Empleado(25, "Jose", "Perez");
+            MessageBox.Show($"{Empleado.Comision.ToString()}");
+
+            Empleado.Comision = 6000;
+            MessageBox.Show($"{Empleado.Comision.ToString()}");
 
         }
     }

@@ -33,12 +33,13 @@
             this.gridProductos = new System.Windows.Forms.DataGridView();
             this.lstPrecioProducto = new System.Windows.Forms.ListBox();
             this.btnCrearCliente = new System.Windows.Forms.Button();
+            this.btnComision = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(12, 12);
+            this.btnGuardar.Location = new System.Drawing.Point(52, 12);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(136, 23);
             this.btnGuardar.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // btnMostrar
             // 
-            this.btnMostrar.Location = new System.Drawing.Point(244, 12);
+            this.btnMostrar.Location = new System.Drawing.Point(274, 12);
             this.btnMostrar.Name = "btnMostrar";
             this.btnMostrar.Size = new System.Drawing.Size(145, 23);
             this.btnMostrar.TabIndex = 1;
@@ -74,19 +75,30 @@
             // 
             // btnCrearCliente
             // 
-            this.btnCrearCliente.Location = new System.Drawing.Point(531, 12);
+            this.btnCrearCliente.Location = new System.Drawing.Point(523, 12);
             this.btnCrearCliente.Name = "btnCrearCliente";
-            this.btnCrearCliente.Size = new System.Drawing.Size(75, 23);
+            this.btnCrearCliente.Size = new System.Drawing.Size(120, 23);
             this.btnCrearCliente.TabIndex = 4;
             this.btnCrearCliente.Text = "Crear Clientes";
             this.btnCrearCliente.UseVisualStyleBackColor = true;
             this.btnCrearCliente.Click += new System.EventHandler(this.btnCrearCliente_Click);
+            // 
+            // btnComision
+            // 
+            this.btnComision.Location = new System.Drawing.Point(497, 89);
+            this.btnComision.Name = "btnComision";
+            this.btnComision.Size = new System.Drawing.Size(171, 92);
+            this.btnComision.TabIndex = 5;
+            this.btnComision.Text = "Comision Clientes";
+            this.btnComision.UseVisualStyleBackColor = true;
+            this.btnComision.Click += new System.EventHandler(this.btnComision_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(721, 204);
+            this.Controls.Add(this.btnComision);
             this.Controls.Add(this.btnCrearCliente);
             this.Controls.Add(this.lstPrecioProducto);
             this.Controls.Add(this.gridProductos);
@@ -106,6 +118,7 @@
         private System.Windows.Forms.DataGridView gridProductos;
         private System.Windows.Forms.ListBox lstPrecioProducto;
         private System.Windows.Forms.Button btnCrearCliente;
+        private System.Windows.Forms.Button btnComision;
     }
 }
 
