@@ -9,10 +9,12 @@ namespace LibTransporte
 {
     public class Auto: transporteBase
     {
+        
         public Auto(string maxFuel, int maxNroDePasajeros, int velocidad, string modelo) : base(maxFuel, maxNroDePasajeros, velocidad)
         {
             Modelo = modelo;
         }
+
         public string Modelo { get; set; }
 
 
@@ -30,12 +32,12 @@ namespace LibTransporte
             return $"El auto esta desacelerando a : {Velocidad} Km/h";
         }
 
-        public string doblarAIzq()
+        public string DoblarAIzq()
         {
             return "Doblar a la izquierda";
         }
 
-        public string doblarADcha()
+        public string DoblarADcha()
         {
             return "Doblar a la derecha";
         }

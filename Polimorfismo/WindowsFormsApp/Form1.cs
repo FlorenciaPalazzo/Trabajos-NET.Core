@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -72,8 +73,9 @@ namespace WindowsFormsApp
             Avion avion = new Avion("5000",50,500,1000,4);
             MessageBox.Show($" {avion.ImprimirCaracteristicas()},{avion.Ascender()},{avion.Descender()},{avion.Acelerar(100)},{avion.Desacelerar(200)}");
 
+         
             Auto auto = new Auto("200",4,120,"AZC123");
-            MessageBox.Show($"{auto.ImprimirCaracteristicas()},{auto.Acelerar(20)},{auto.Desacelerar(50)},{auto.doblarAIzq()},{auto.doblarADcha()}");
+            MessageBox.Show($"{auto.ImprimirCaracteristicas()},{auto.Acelerar(20)},{auto.Desacelerar(50)},{auto.DoblarAIzq()},{auto.DoblarADcha()}");
         }
     }
 }
