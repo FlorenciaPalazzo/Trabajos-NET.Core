@@ -40,5 +40,12 @@ namespace WindowsPresentacion
                 lstHabitaciones.Items.Add($"{item.Numero} {item.Estado}");
 	        }
         }
+
+        private void btnCalcularEdad_Click(object sender, EventArgs e)
+        {
+            Paciente paciente1 = new Paciente(12,"Julio","Boca", "S. Martin 55", "1236547", "julio@gmail.com", "CDF12", new DateTime(2000,10,1) );
+
+            MessageBox.Show($"Nombre: {paciente1.Nombre} Edad: {paciente1.Edad}");
+        }
     }
 }

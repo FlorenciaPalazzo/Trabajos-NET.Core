@@ -33,6 +33,7 @@
             this.gridPacientes = new System.Windows.Forms.DataGridView();
             this.lstMedicosClinicos = new System.Windows.Forms.ListBox();
             this.lstHabitaciones = new System.Windows.Forms.ListBox();
+            this.btnCalcularEdad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridMedicos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).BeginInit();
             this.SuspendLayout();
@@ -79,11 +80,22 @@
             this.lstHabitaciones.Size = new System.Drawing.Size(213, 355);
             this.lstHabitaciones.TabIndex = 4;
             // 
+            // btnCalcularEdad
+            // 
+            this.btnCalcularEdad.Location = new System.Drawing.Point(686, 21);
+            this.btnCalcularEdad.Name = "btnCalcularEdad";
+            this.btnCalcularEdad.Size = new System.Drawing.Size(350, 23);
+            this.btnCalcularEdad.TabIndex = 5;
+            this.btnCalcularEdad.Text = "Calcular Edad";
+            this.btnCalcularEdad.UseVisualStyleBackColor = true;
+            this.btnCalcularEdad.Click += new System.EventHandler(this.btnCalcularEdad_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 450);
+            this.ClientSize = new System.Drawing.Size(1056, 450);
+            this.Controls.Add(this.btnCalcularEdad);
             this.Controls.Add(this.lstHabitaciones);
             this.Controls.Add(this.lstMedicosClinicos);
             this.Controls.Add(this.gridPacientes);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.DataGridView gridPacientes;
         private System.Windows.Forms.ListBox lstMedicosClinicos;
         private System.Windows.Forms.ListBox lstHabitaciones;
+        private System.Windows.Forms.Button btnCalcularEdad;
     }
 }
