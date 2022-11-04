@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace WindowsFactura.Entidades
 {
-    public class Usuario { 
-    
+    public class Usuario : Persona
+    {
+
         public Cliente Cliente { get; set; }
     }
 }
