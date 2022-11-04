@@ -2,15 +2,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Negocio
 {
+    /// <summary>
+    /// Antes era una clase Concreta. Ahora es estatica.
+    /// </summary>
     public static class AdmPaciente
     {
         static List<Paciente> pacientes;
 
+        /// <summary>
+        /// Creo lista de pacientes e inserto con pacientes.Add(), los datos de cada paciente.
+        /// </summary>
+        /// <returns> La lista de "pacientes"</returns>
         public static List<Paciente> Insertar()
         {
             //Creo la lista

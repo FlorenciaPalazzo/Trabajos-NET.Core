@@ -6,11 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Negocio
-{
+{   /// <summary>
+    /// Antes era una clase Concreta. Ahora es estatica.
+    /// </summary>
     public static class AdmHabitacion
     {
         static List<Habitacion> habitaciones;
-
+        /// <summary>
+        /// Creo lista de habitaciones e inserto con habitaciones.Add(), los datos de cada habitacion.
+        /// </summary>
+        /// <returns>La lista de "habitaciones"</returns>
         public static List<Habitacion> Listar()
         {
             //TODO

@@ -15,9 +15,9 @@ namespace Negocio
         static List<Medico> medicos;
 
         /// <summary>
-        /// 
+        /// Creo lista de medicos e inserto con medicos.Add(), los datos de cada medico.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>La lista "medicos"</returns>
         public static List<Medico> Listar()
         {
             medicos = new List<Medico>();
@@ -33,6 +33,12 @@ namespace Negocio
             
         }
 
+        
+        /// <summary>
+        /// Busca dentro de la lista medico por especialidad.
+        /// </summary>
+        /// <param name="especialidad"></param>
+        /// <returns></returns>
         public static List<Medico> Listar(string especialidad)
         {
             List<Medico> espMedicos = new List<Medico>();
@@ -48,6 +54,7 @@ namespace Negocio
 
             return espMedicos;
         }
+        
         public static int Insertar(Medico medicos)
         {
             //TODO…return 0
