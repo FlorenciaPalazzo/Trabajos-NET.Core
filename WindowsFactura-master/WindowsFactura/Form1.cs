@@ -55,9 +55,15 @@ namespace WindowsFactura
             listaProductos.Add(producto2);
 
             MessageBox.Show($"Nombre:{producto2.Nombre}\nPrecio:{producto2.Precio}\nCategoria:{producto2.Categoria.Nombre}");
-                
 
-                        
+
+            Factura factura1 = new Factura("A",12535, new DateTime(2022,11,05));
+
+            DetalleFactura detalleFactura1 = new DetalleFactura(producto1, factura1);
+
+            MessageBox.Show($"Factur\nTipo:{detalleFactura1.Factura.Tipo},\nFecha:{detalleFactura1.Factura.Fecha},\nNumero:{detalleFactura1.Factura.Numero},, {detalleFactura1.Producto.Nombre}");
+
+
         }
     }
 }

@@ -10,6 +10,13 @@ namespace WindowsFactura.Entidades
 {
     public class Factura
     {
+        public Factura(string tipo, int numero, DateTime fecha)
+        {
+            Tipo = tipo;
+            Numero = numero;
+            Fecha = fecha;
+
+        }
 
         public string Tipo { get; set; }
         public int Numero { get; set; }

@@ -9,7 +9,12 @@ namespace WindowsFactura.Entidades
 {
     public class DetalleFactura
     {
-              
+        public DetalleFactura(Producto producto, Factura factura)
+        {
+            Producto = producto;
+            Factura = factura;
+        }
+
         public Producto Producto { get; set; }
         public Factura Factura { get; set; }
 
