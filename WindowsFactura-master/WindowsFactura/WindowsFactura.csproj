@@ -60,6 +60,7 @@
     <Compile Include="Caso 6\Clinica.cs" />
     <Compile Include="Caso 6\Director.cs" />
     <Compile Include="Entidades\Categoria.cs" />
+    <Compile Include="Entidades\Class1.cs" />
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\DetalleFactura.cs" />
     <Compile Include="Entidades\Empleado.cs" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,11 +21,25 @@ namespace WindowsFactura
 
         private void btnPersona_Click(object sender, EventArgs e)
         {
-            Producto producto1 = new Producto("Mouse", 505.5,);
-            MessageBox.Show($"{producto1}");
+            //Creo lista de detalles para que lo reciba por parametro Producto
+            List <DetalleFactura> listaDetalles= new List<DetalleFactura> ();
+            
+            //Creo La lista de los productos para que lo reciba por parametro categoria
+            List<Producto> listaProductos = new List<Producto>();
 
-            Producto producto2 = new Producto("Teclado", 2500.10);
-            MessageBox.Show($"{producto2}");
+            //Creo categoria (recibe el nombre de la categoria y la lista de los productos segun diagrama)
+            Categoria categoria = new Categoria("Tecnologia",listaProductos );
+
+
+            //Creo producto1
+            Producto producto1 = new Producto("Impresora",5000, listaDetalles, categoria);
+            MessageBox.Show($"{producto1.Nombre},{producto1.Precio}");
+
+            //Creo producto2
+            Producto producto2 = new Producto("Scanner", 7050, listaDetalles, categoria);
+            MessageBox.Show($"{producto2.Nombre},{producto2.Precio}");
+
+            
         }
     }
 }

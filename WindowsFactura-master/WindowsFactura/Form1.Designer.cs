@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.btnPersona = new System.Windows.Forms.Button();
+            this.gridProductos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPersona
@@ -37,18 +39,28 @@
             this.btnPersona.Name = "btnPersona";
             this.btnPersona.Size = new System.Drawing.Size(159, 44);
             this.btnPersona.TabIndex = 0;
-            this.btnPersona.Text = "Persona";
+            this.btnPersona.Text = "Producto";
             this.btnPersona.UseVisualStyleBackColor = true;
             this.btnPersona.Click += new System.EventHandler(this.btnPersona_Click);
+            // 
+            // gridProductos
+            // 
+            this.gridProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridProductos.Location = new System.Drawing.Point(12, 141);
+            this.gridProductos.Name = "gridProductos";
+            this.gridProductos.Size = new System.Drawing.Size(240, 150);
+            this.gridProductos.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(275, 176);
+            this.ClientSize = new System.Drawing.Size(275, 323);
+            this.Controls.Add(this.gridProductos);
             this.Controls.Add(this.btnPersona);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.gridProductos)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnPersona;
+        private System.Windows.Forms.DataGridView gridProductos;
     }
 }
 
