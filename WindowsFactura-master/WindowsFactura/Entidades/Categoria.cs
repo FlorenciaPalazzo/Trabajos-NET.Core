@@ -9,13 +9,12 @@ namespace WindowsFactura.Entidades
 {
     public class Categoria
     {
-        public Categoria(string nombre, List<Producto>listaProductos)
+        public Categoria(string nombre)
         {
             Nombre= nombre;
-            Productos = listaProductos;
+            
         }
         public string Nombre { get; set; }
-
         public List<Producto> Productos { get; set; }
 
     }
