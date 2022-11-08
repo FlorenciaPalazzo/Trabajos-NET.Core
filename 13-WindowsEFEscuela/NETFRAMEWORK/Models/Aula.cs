@@ -21,5 +21,17 @@ namespace NETFRAMEWORK.Models
         [Column(TypeName ="char")]
         [StringLength(1)]
         public string Codigo { get; set; }
+
+
+       
+        public int IdMateria { get; set; }
+        [ForeignKey("IdMateria")]
+
+        public Materia Materia { get; set; }
+
+
+        public int IdProfesor { get; set; }
+        [ForeignKey("IdProfesor")]
+        public Profesor Profesor { get; set; }
     }
 }

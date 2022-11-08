@@ -19,9 +19,11 @@ namespace WindowsEF.Models
         public string Nombre { get; set; }
         [Column(TypeName = "money")]
         public decimal Precio { get; set; }
-
-
-
+        public int IdCategoria { get; set; }
+        #region
+        [ForeignKey("IdCategoria")]
+        public Categoria Categoria{ get; set; }
+        #endregion
 
     }
 }

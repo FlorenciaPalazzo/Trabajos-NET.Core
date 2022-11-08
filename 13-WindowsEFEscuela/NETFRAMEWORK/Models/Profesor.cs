@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NETFRAMEWORK.Models
@@ -23,6 +24,13 @@ namespace NETFRAMEWORK.Models
         [Column(TypeName ="varchar")]
         [StringLength (50)] 
         public string Titulo { get; set; }
+
+        public List<Alumno> Alumnos { get; set; }
+        public List<Materia> Materias { get; set; }
+
+        [ForeignKey("IdAula")]
+        public int IdAula { get; set; }
+        public Aula Aula { get; set; }
     }
 }
 

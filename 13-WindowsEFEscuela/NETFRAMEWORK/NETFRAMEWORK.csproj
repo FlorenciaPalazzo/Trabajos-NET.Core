@@ -63,34 +63,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211072102554_CrearBaseDeDatos.cs" />
-    <Compile Include="Migrations\202211072102554_CrearBaseDeDatos.designer.cs">
-      <DependentUpon>202211072102554_CrearBaseDeDatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211072154289_ModificacionDatos.cs" />
-    <Compile Include="Migrations\202211072154289_ModificacionDatos.designer.cs">
-      <DependentUpon>202211072154289_ModificacionDatos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202211072222390_Agrego clase materia y aula.cs" />
-    <Compile Include="Migrations\202211072222390_Agrego clase materia y aula.designer.cs">
-      <DependentUpon>202211072222390_Agrego clase materia y aula.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Alumno.cs" />
     <Compile Include="Models\Aula.cs" />
     <Compile Include="Models\Materia.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\202211072102554_CrearBaseDeDatos.resx">
-      <DependentUpon>202211072102554_CrearBaseDeDatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211072154289_ModificacionDatos.resx">
-      <DependentUpon>202211072154289_ModificacionDatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211072222390_Agrego clase materia y aula.resx">
-      <DependentUpon>202211072222390_Agrego clase materia y aula.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

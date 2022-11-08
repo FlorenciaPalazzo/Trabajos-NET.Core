@@ -21,5 +21,10 @@ namespace NETFRAMEWORK.Models
         public string Apellido { get; set; }
 
         public DateTime? FechaNacimiento { get; set; }
+
+        public int IdProfesor { get; set; }
+        [ForeignKey("IdProfesor")]
+        public Profesor Profesor  { get; set; }
+        
     }
 }

@@ -23,5 +23,15 @@ namespace NETFRAMEWORK.Models
         [Column(TypeName ="varchar")]
         [StringLength(50)]
         public string Programa { get; set; }
+
+
+        public int IdProfesor { get; set; }
+
+        [ForeignKey("IdProfesor")]
+        public Profesor Profesor { get; set; }
+        public int IdAula { get; set; }
+
+        [ForeignKey("IdAula")]
+        public Aula Aula { get; set; }
     }
 }

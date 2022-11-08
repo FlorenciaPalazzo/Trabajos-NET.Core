@@ -63,24 +63,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211071933489_CrearBaseDatos.cs" />
-    <Compile Include="Migrations\202211071933489_CrearBaseDatos.designer.cs">
-      <DependentUpon>202211071933489_CrearBaseDatos.cs</DependentUpon>
+    <Compile Include="Migrations\202211081751339_Crear Relaciones.cs" />
+    <Compile Include="Migrations\202211081751339_Crear Relaciones.designer.cs">
+      <DependentUpon>202211081751339_Crear Relaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202211072018128_ModificarTabla.cs" />
-    <Compile Include="Migrations\202211072018128_ModificarTabla.designer.cs">
-      <DependentUpon>202211072018128_ModificarTabla.cs</DependentUpon>
+    <Compile Include="Migrations\202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .cs" />
+    <Compile Include="Migrations\202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .designer.cs">
+      <DependentUpon>202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Catergoria.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\202211071933489_CrearBaseDatos.resx">
-      <DependentUpon>202211071933489_CrearBaseDatos.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202211081751339_Crear Relaciones.resx">
+      <DependentUpon>202211081751339_Crear Relaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202211072018128_ModificarTabla.resx">
-      <DependentUpon>202211072018128_ModificarTabla.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .resx">
+      <DependentUpon>202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

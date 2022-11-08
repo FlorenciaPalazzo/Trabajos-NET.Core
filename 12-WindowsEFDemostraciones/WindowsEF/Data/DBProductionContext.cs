@@ -11,7 +11,7 @@ namespace WindowsEF.Data
     {
         public DBProductionContext(): base ("keyDBProduction"){}
 
-        public DbSet<Catergoria> Categorias { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Producto> Productos { get; set; }
 
         }
