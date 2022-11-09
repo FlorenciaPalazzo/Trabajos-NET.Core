@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsEFNorthwind.models.Category" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAACAAAgAAAAAAAAAAAAACAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>models\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Customer" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIQAAAgAAAAAAIIAAgAAAAEAIAAAACAAACIAAAAAA=</HashCode>
+      <FileName>models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.CustomerDemographic" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>models\CustomerDemographic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Employee" Collapsed="true">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMgQEAAoAAAAGRIIAAAAAQACCIAgYACAAAAAAAAAAg=</HashCode>
+      <FileName>models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.NothWindContext" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEIAQAAAAQAAIAAAAAAAAAAGAAAkAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>models\NothWindContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Order" Collapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAMAABBAAAAAAAAAIAAAICABGAAEAgBAAAAEAAAAACA=</HashCode>
+      <FileName>models\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Order_Detail" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAECABAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAA=</HashCode>
+      <FileName>models\Order_Detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Product" Collapsed="true">
+    <Position X="10" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cEAAAAACAAAAAIAAAAAAQAAAAAEAAAAAACAAAAgoCAA=</HashCode>
+      <FileName>models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Region" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAABAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Shipper" Collapsed="true">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>models\Shipper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Supplier" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEgAAAAAAIIAAgAAAAAAIAAAACACACIAAAAAQ=</HashCode>
+      <FileName>models\Supplier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsEFNorthwind.models.Territory" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAgAAAQAAAAAAAAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>models\Territory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
