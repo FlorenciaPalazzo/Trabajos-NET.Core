@@ -24,13 +24,16 @@ namespace NETFRAMEWORK.Models
         [Column(TypeName ="varchar")]
         [StringLength (50)] 
         public string Titulo { get; set; }
+        public int IdAula { get; set; }
 
         public List<Alumno> Alumnos { get; set; }
         public List<Materia> Materias { get; set; }
 
+
+        #region
         [ForeignKey("IdAula")]
-        public int IdAula { get; set; }
         public Aula Aula { get; set; }
+        #endregion
     }
 }
 

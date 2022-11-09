@@ -12,7 +12,7 @@ namespace NETFRAMEWORK.Models
     public class Materia
     {
         [Key]
-        public int MateriaID { get; set; }
+        public int MateriaId { get; set; }
 
         [Required]
         [Column(TypeName ="varchar")]
@@ -23,15 +23,17 @@ namespace NETFRAMEWORK.Models
         [Column(TypeName ="varchar")]
         [StringLength(50)]
         public string Programa { get; set; }
-
-
         public int IdProfesor { get; set; }
-
-        [ForeignKey("IdProfesor")]
-        public Profesor Profesor { get; set; }
         public int IdAula { get; set; }
 
+
+        #region
+        [ForeignKey("IdProfesor")]
+        public Profesor Profesor { get; set; }
+
+     
         [ForeignKey("IdAula")]
         public Aula Aula { get; set; }
+        #endregion
     }
 }

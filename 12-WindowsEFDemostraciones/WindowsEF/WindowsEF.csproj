@@ -71,8 +71,19 @@
     <Compile Include="Migrations\202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .designer.cs">
       <DependentUpon>202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211091722338_CreateEmpleado.cs" />
+    <Compile Include="Migrations\202211091722338_CreateEmpleado.designer.cs">
+      <DependentUpon>202211091722338_CreateEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202211091753503_Crear Employee y EmployeeDetalle.cs" />
+    <Compile Include="Migrations\202211091753503_Crear Employee y EmployeeDetalle.designer.cs">
+      <DependentUpon>202211091753503_Crear Employee y EmployeeDetalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Catergoria.cs" />
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\EmployeeDetalle.cs" />
     <Compile Include="Models\Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +92,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .resx">
       <DependentUpon>202211081803027_ Cambio de nombre Categoria_Id a IdCategoria .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211091722338_CreateEmpleado.resx">
+      <DependentUpon>202211091722338_CreateEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202211091753503_Crear Employee y EmployeeDetalle.resx">
+      <DependentUpon>202211091753503_Crear Employee y EmployeeDetalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

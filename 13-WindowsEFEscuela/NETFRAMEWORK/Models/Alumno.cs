@@ -23,8 +23,11 @@ namespace NETFRAMEWORK.Models
         public DateTime? FechaNacimiento { get; set; }
 
         public int IdProfesor { get; set; }
+
+        #region
         [ForeignKey("IdProfesor")]
         public Profesor Profesor  { get; set; }
-        
+        #endregion
+
     }
 }

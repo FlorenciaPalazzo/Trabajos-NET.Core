@@ -16,5 +16,11 @@ namespace NETFRAMEWORK.Data
         public DbSet<Materia> Materias { get; set; }
         public DbSet<Aula> Aulas { get; set; }
 
+     protected override void OnModelCreating(DbModelBuilder modelBuilder) =>
+            // base.OnModelCreating(modelBuilder);
+          
+          modelBuilder.Entity<Aula>().HasRequired(m=>m.Materia).WithRequiredPrincipal(a=>a.Aula);
+            
+
     }
 }

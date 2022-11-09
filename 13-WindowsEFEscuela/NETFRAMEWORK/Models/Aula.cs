@@ -22,16 +22,19 @@ namespace NETFRAMEWORK.Models
         [StringLength(1)]
         public string Codigo { get; set; }
 
-
-       
-        public int IdMateria { get; set; }
-        [ForeignKey("IdMateria")]
-
-        public Materia Materia { get; set; }
-
-
         public int IdProfesor { get; set; }
+        public int IdMateria { get; set; }
+
+
+        #region
+       
+
         [ForeignKey("IdProfesor")]
         public Profesor Profesor { get; set; }
+
+        
+        [ForeignKey("IdMateria")]
+        public  Materia Materia { get; set; }
+        #endregion
     }
 }
