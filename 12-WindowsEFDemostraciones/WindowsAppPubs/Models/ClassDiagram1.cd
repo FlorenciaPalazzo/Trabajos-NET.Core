@@ -1,84 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="WindowsAppPubs.Models.Author">
-    <Position X="1.5" Y="0.5" Width="1.5" />
+    <Position X="3" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABgAAAAAIAAAACAAAAAIAAEAkAAAAAAAQCAA=</HashCode>
       <FileName>Models\Author.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="titleauthors" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.Discount">
-    <Position X="5" Y="1.25" Width="1.5" />
+    <Position X="13.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAABAAAQBAAAAAAIgAAA=</HashCode>
       <FileName>Models\Discount.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WindowsAppPubs.Models.Employee">
-    <Position X="8.5" Y="3.25" Width="1.5" />
+    <Position X="6.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAQAJAQAAAABAAAAAAAAAoAAAAAAAACAAAABAAAAAA=</HashCode>
       <FileName>Models\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="WindowsAppPubs.Models.PubContext">
+    <Position X="10.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAAEAAAAEAAAEAABAAAGABAAAAABgAAAQAAAAA=</HashCode>
+      <FileName>Models\PubContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Titles" />
+      <Property Name="Stores" />
+      <Property Name="Sales" />
+      <Property Name="Royscheds" />
+      <Property Name="Publishers" />
+      <Property Name="Titleauthors" />
+      <Property Name="Pubinfos" />
+      <Property Name="Employees" />
+      <Property Name="Authors" />
+      <Property Name="Discounts" />
+      <Property Name="Jobs" />
+    </ShowAsCollectionAssociation>
+  </Class>
   <Class Name="WindowsAppPubs.Models.Job">
-    <Position X="8.5" Y="0.75" Width="1.5" />
+    <Position X="8.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAgAAAAAAAIAAAAAAAAAAAAAAAAABgAAAA=</HashCode>
       <FileName>Models\Job.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="WindowsAppPubs.Models.PubContext">
-    <Position X="3.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AEAEAAAAEAAAAEAAAEAABAAAGABAAAAABgAAAQAAAAA=</HashCode>
-      <FileName>Models\PubContext.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="WindowsAppPubs.Models.PubInfo">
-    <Position X="10.25" Y="3" Width="1.5" />
+    <Position X="4.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAIAAAAEAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\PubInfo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WindowsAppPubs.Models.Publisher">
-    <Position X="5" Y="3.5" Width="1.5" />
+    <Position X="4.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAMAAQAAAAAAAAAAICAAAAAAAQAAGAAAAAAAAAAA=</HashCode>
       <FileName>Models\Publisher.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="employees" />
+      <Property Name="titles" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.Roysched">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+    <Position X="13.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAgQAAAAAgAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Roysched.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WindowsAppPubs.Models.Sale">
-    <Position X="1.5" Y="4" Width="1.5" />
+    <Position X="0.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAgAAAAYAAAAAAAAIAAAAAAAABAAIABAAAAAAAAAAA=</HashCode>
       <FileName>Models\Sale.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WindowsAppPubs.Models.Store">
-    <Position X="3.25" Y="4.5" Width="1.5" />
+    <Position X="3" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAMAAAACAAAAABAAAAEABAAAAYAAAA=</HashCode>
       <FileName>Models\Store.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="sales" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.Title">
-    <Position X="6.75" Y="0.75" Width="1.5" />
+    <Position X="8" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEghAIAiRAAAAAAEAAAAAAgAAAAFAAAAAAAAAAAAIAA=</HashCode>
       <FileName>Models\Title.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="sales" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.Titleauthor">
-    <Position X="12" Y="0.75" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAQgAAACAAAAAAAIAAAAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>Models\Titleauthor.cs</FileName>
