@@ -11,7 +11,8 @@ namespace NETFRAMEWORK.Models
     [Table("Materia")]
     public class Materia
     {
-        [Key]
+        [Key,ForeignKey("Aula")]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MateriaId { get; set; }
 
         [Required]
@@ -31,7 +32,6 @@ namespace NETFRAMEWORK.Models
         [ForeignKey("IdProfesor")]
         public Profesor Profesor { get; set; }
 
-     
         [ForeignKey("IdAula")]
         public Aula Aula { get; set; }
         #endregion

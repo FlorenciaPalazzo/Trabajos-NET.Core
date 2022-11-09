@@ -11,7 +11,7 @@ namespace NETFRAMEWORK.Models
     [Table("Aula")]
     public class Aula
     {
-        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int AulaId { get; set; }
 
         [Required]

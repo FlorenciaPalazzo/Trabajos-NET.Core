@@ -7,7 +7,8 @@ namespace NETFRAMEWORK.Models
     [Table("Docente")]   
     public class Profesor
     {
-        [Key]
+        [Key, ForeignKey("Aula")]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ProfesorId { get; set; }
 
         [Required]

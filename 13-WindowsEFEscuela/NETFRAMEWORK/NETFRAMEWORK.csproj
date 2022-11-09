@@ -63,12 +63,20 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202211092217050_Create Database.cs" />
+    <Compile Include="Migrations\202211092217050_Create Database.designer.cs">
+      <DependentUpon>202211092217050_Create Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Alumno.cs" />
     <Compile Include="Models\Aula.cs" />
     <Compile Include="Models\Materia.cs" />
     <Compile Include="Models\Profesor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Migrations\202211092217050_Create Database.resx">
+      <DependentUpon>202211092217050_Create Database.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
