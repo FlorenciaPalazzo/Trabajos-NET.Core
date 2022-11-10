@@ -45,11 +45,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.Job">
-    <Position X="8.5" Y="0.5" Width="1.5" />
+    <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAgAAAAAAAIAAAAAAAAAAAAAAAAABgAAAA=</HashCode>
       <FileName>Models\Job.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="employees" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="WindowsAppPubs.Models.PubInfo">
     <Position X="4.75" Y="2.75" Width="1.5" />
