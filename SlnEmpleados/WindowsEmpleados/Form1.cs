@@ -31,23 +31,23 @@ namespace WindowsEmpleados
         {
             Empleado empleado1 = new Empleado()
             {
-                Id = 4,
-                Nombre = "Carlos",
+                Id = 16,
+                Nombre = "Juan",
                 Apellido = "Sanchez",
                 Legajo = "A23",
 
             };
             Empleado empleado2 = new Empleado()
             {
-                Id = 5,
-                Nombre = "Julia",
+                Id =18,
+                Nombre = "Pedro",
                 Apellido = "Perez",
                 Legajo = "A25",
 
             };
             Empleado empleado3 = new Empleado()
             {
-                Id = 6,
+                Id =19,
                 Nombre = "Maria",
                 Apellido = "Martinez",
                 Legajo = "A26",
@@ -57,6 +57,7 @@ namespace WindowsEmpleados
             AdminEmpleado.Insertar(empleado1);
             AdminEmpleado.Insertar(empleado2);
             AdminEmpleado.Insertar(empleado3);
+
 
             if (listEmpleados != null)
             {

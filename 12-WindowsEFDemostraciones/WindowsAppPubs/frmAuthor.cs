@@ -31,15 +31,12 @@ namespace WindowsAppPubs
             MessageBox.Show($"{traeAuthor.au_lname}");
 
         }
-
-         
         
-
         private void btnAgregar_Click_1(object sender, EventArgs e)
         {
             Author nuevoAutor = new Author()
             {
-                au_id = "11-225-125",
+                au_id = "10-555",
                 au_lname = "Black",
                 au_fname = "White",
                 phone = "215489",

@@ -15,7 +15,7 @@ namespace LibreriaEmpleado
 
         public string Legajo { get; set; }
 
-        Departamento Departamento { get; set; }
+        public Departamento Departamento { get; set; }
 
     }
 }
