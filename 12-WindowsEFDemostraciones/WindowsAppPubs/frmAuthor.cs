@@ -27,7 +27,7 @@ namespace WindowsAppPubs
 
         private void btnTraerUno_Click(object sender, EventArgs e)
         {
-            Author traeAuthor = DacAuthor.TraerUno("427-17-2319");
+            Author traeAuthor = DacAuthor.TraerUno("22222");
             MessageBox.Show($"{traeAuthor.au_lname}");
 
         }
@@ -36,7 +36,7 @@ namespace WindowsAppPubs
         {
             Author nuevoAutor = new Author()
             {
-                au_id = "10-555",
+                au_id = "22222",
                 au_lname = "Black",
                 au_fname = "White",
                 phone = "215489",
