@@ -32,8 +32,12 @@ namespace WindowsAppPubs
 
         }
         
-        private void btnAgregar_Click_1(object sender, EventArgs e)
+        
+       
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
+
+
             Author nuevoAutor = new Author()
             {
                 au_id = "22222",
@@ -48,11 +52,50 @@ namespace WindowsAppPubs
 
             };
 
-            int filasAfectadas = DacAuthor.Nuevo( nuevoAutor);
+            int filasAfectadas = DacAuthor.Nuevo(nuevoAutor);
             if (filasAfectadas > 0)
             {
                 MessageBox.Show($"Autor agregado con exito");
             }
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string id = txtId.Text;
+
+            Author author = new Author();
+
+            author.au_id = id;
+
+            int filasAfectadas= DacAuthor.Eliminar(author);
+            if (filasAfectadas > 0)
+            {
+                MessageBox.Show("Fila eliminada");
+            }
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            string id = txtId.Text;
+            Author authorModificar = DacAuthor.TraerUno(id);
+
+          
+
+
+            if (authorModificar.au_id == id)
+            {
+                authorModificar.au_lname = txtNombre.Text;
+                authorModificar.address = txtDireccion.Text;
+            }
+
+            int filasAfectadas = DacAuthor.Modificar(authorModificar);
+
+            if(filasAfectadas > 0)
+            {
+                MessageBox.Show("Fila modificada con exito");
+            }
+        }
+
     }
 }

@@ -55,7 +55,7 @@ namespace WindowsAppPubs.AdminDatos
 
         public static int Eliminar(Store storeEliminar)
         {
-            Store findId = context.Stores.Find(storeEliminar);
+            Store findId = context.Stores.Find(storeEliminar.stor_id);
 
             if (findId != null)
             {

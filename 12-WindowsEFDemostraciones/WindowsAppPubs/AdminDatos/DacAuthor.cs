@@ -31,13 +31,15 @@ namespace WindowsAppPubs.AdminDatos
 
         public static int Modificar(Author authorModificado)
         {
+            
+
             int filasAfectadas = context.SaveChanges();
             return filasAfectadas;
         }
 
         public static int Eliminar(Author author)
         {
-            Author findId = context.Authors.Find(author);
+            Author findId = context.Authors.Find(author.au_id);
 
             if (findId != null)
             {
