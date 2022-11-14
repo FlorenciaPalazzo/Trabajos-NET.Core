@@ -26,6 +26,7 @@ namespace WindowsCompaniaAerea
             
             Piloto pilotoJet1 = new Piloto("Morales", "Juan Carlos");
             Copiloto copilotoJet1 = new Copiloto("Martinez", "Oscar");
+
             Azafata azafataJet1 = new Azafata("Gonzalez", "Mariela");
 
             if (azafataJet1.ABordo != true)
@@ -52,6 +53,8 @@ namespace WindowsCompaniaAerea
             Helicoptero helicoptero1 = new Helicoptero(4, 250, Convert.ToDecimal(235.2), 3,3);
 
             listaHelicoptero.Add(helicoptero1);
+            MessageBox.Show(helicoptero1.Despegar());
+            MessageBox.Show(helicoptero1.Aterrizar());
             MessageBox.Show($"Helicoptero creado con exito");
             
             gridListaJets.DataSource = listaHelicoptero;
@@ -82,6 +85,56 @@ namespace WindowsCompaniaAerea
             gridAzafatas.Rows.Clear();
         }
 
-        
+        private void btnCrearAzafata_Click(object sender, EventArgs e)
+        {
+
+            Piloto pilotoJet2 = new Piloto("Morales", "Juan Carlos");
+            Copiloto copilotoJet2 = new Copiloto("Martinez", "Oscar");
+            Azafata azafataJet2 = new Azafata("Gonzalez", "Mariela");
+
+       
+            Jet jet2 = new Jet(4, 200, Convert.ToDecimal(250.2), 3, pilotoJet2, copilotoJet2, azafataJet2);
+
+            jet2.AgregarAzafata("Monica", "Pepe");
+
+
+            MessageBox.Show("Azafatas creadas");
+
+        }
+
+        private void btnMantenimiento_Click(object sender, EventArgs e)
+        {
+            Piloto pilotoJet3 = new Piloto("Morales", "Juan Carlos");
+            Copiloto copilotoJet3 = new Copiloto("Martinez", "Oscar");
+            Azafata azafataJet3 = new Azafata("Gonzalez", "Mariela");
+
+            Jet jet3 = new Jet(4, 200, Convert.ToDecimal(250.2), 3, pilotoJet3, copilotoJet3, azafataJet3);
+
+            MessageBox.Show(jet3.Informe(pilotoJet3,copilotoJet3,azafataJet3));
+            MessageBox.Show(jet3.Mantenimiento());
+
+
+        }
+
+        private void btnQuitar_Click(object sender, EventArgs e)
+        {
+            Piloto pilotoJet4 = new Piloto("Morales", "Juan Carlos");
+            Copiloto copilotoJet4 = new Copiloto("Martinez", "Oscar");
+            Azafata azafataJet4 = new Azafata("Gonzalez", "Mariela");
+
+            Jet jet4 = new Jet(4, 200, Convert.ToDecimal(250.2), 3, pilotoJet4, copilotoJet4, azafataJet4);
+
+
+            Azafata nuevaAzafata = jet4.QuitarAzafata();
+
+            if (nuevaAzafata == null )
+            {
+                MessageBox.Show("azafata eliminada correctamente");
+            }
+
+            
+
+
+        }
     }
 }

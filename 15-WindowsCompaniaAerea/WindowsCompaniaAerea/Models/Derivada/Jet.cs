@@ -49,13 +49,13 @@ namespace WindowsCompaniaAerea.Models.Derivada
             QuitarAzafata();
             return "Jet en mantenimiento...";
         }
-    
-        //public string Informe( Piloto piloto, Copiloto copiloto, Azafata azafata)
-        //{
-        //    return "Piloto:" + piloto.Nombre + " " + piloto.Apellido + "\nCopiloto:" + copiloto.Nombre + " " + copiloto.Apellido +
-        //        "\n Azafata" + azafata.Nombre + " " + azafata.Apellido;
-        //        ;
-        //}
+
+        public string Informe(Piloto piloto, Copiloto copiloto, Azafata azafata)
+        {
+            return "Piloto:" + piloto.Nombre + " " + piloto.Apellido + "\nCopiloto:" + copiloto.Nombre + " " + copiloto.Apellido +
+                "\n Azafata" + azafata.Nombre + " " + azafata.Apellido;
+            ;
+        }
 
 
     }
