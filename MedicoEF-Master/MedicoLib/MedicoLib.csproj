@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMedico\DacEspecialidad.cs" />
     <Compile Include="AdminMedico\DacMedico.cs" />
     <Compile Include="Data\DBMedicoContext.cs" />
     <Compile Include="Especialidad.cs" />

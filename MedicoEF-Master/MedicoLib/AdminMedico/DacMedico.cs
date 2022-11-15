@@ -55,14 +55,17 @@ namespace MedicoLib.AdminMedico
             }
             return rta;
         }
+
         public static int ModificarMedico(int medicoId)
         {
-            var medicoModificar= context.Medicos.Find(medicoId);
-
-            if (medicoModificar.MedicoId == medicoId)
+            int rta = 0;
+            var medicoModificar = context.Medicos.Find(medicoId);
+            if (medicoModificar != null)
             {
-              medicoModificar.MedicoId =   
+                rta = context.SaveChanges();
             }
+            return rta;
+
         }
     }
 
