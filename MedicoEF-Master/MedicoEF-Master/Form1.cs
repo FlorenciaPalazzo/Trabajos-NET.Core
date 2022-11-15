@@ -37,7 +37,7 @@ namespace MedicoEF_Master
                 Nombre = txtNombre.Text,
                 Apellido= txtApellido.Text,
                 Matricula = txtMatricula.Text,
-                //idEspecialidad= Convert.ToInt32(txtEspecialidad.Text)
+                idEspecialidad= Convert.ToInt32(txtEspecialidad.Text)
             };
 
             int medicoAgregado= DacMedico.AgregarMedico(medico);
@@ -56,7 +56,7 @@ namespace MedicoEF_Master
 
             if (modificarId.MedicoId == id)
             {
-                //modificarId.MedicoId = Convert.ToInt32(txtId.Text);
+                
                 modificarId.Nombre = txtNombre.Text;
                 modificarId.Apellido = txtApellido.Text;
                 modificarId.Matricula = txtMatricula.Text;
@@ -85,13 +85,13 @@ namespace MedicoEF_Master
             }
         }
 
+
         private void btnAgregarEspecialidad_Click(object sender, EventArgs e)
         {
             Especialidad especialidad = new Especialidad()
             {
                 //EspecialidadId = Convert.ToInt32(txtIdEspecialidad.Text),
-                Nombre= txtNombre.Text,
-
+                Nombre= txtNombreEspecialidad.Text,
             };
 
             int especialidadAgregada= DacEspecialidad.AgregarEspecialidad(especialidad);
@@ -99,6 +99,40 @@ namespace MedicoEF_Master
             {
                 MessageBox.Show($"Especialidad {especialidad.Nombre} agregada con éxito");
             }
+        }
+
+        private void btnEliminarEspecialidad_Click(object sender, EventArgs e)
+        {
+            int eliminarEspecialidad= DacEspecialidad.EliminarEspecialidad(Convert.ToInt32(txtIdEspecialidad.Text));
+
+            if (eliminarEspecialidad > 0)
+            {
+                MessageBox.Show($"Medico eliminado con éxito");
+            }
+        }
+
+        private void btnModificarEspecialidad_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtIdEspecialidad.Text);
+
+            Especialidad especialidadModificada = DacEspecialidad.TraerXid(id);
+
+            if (especialidadModificada.EspecialidadId== id)
+            {
+                especialidadModificada.Nombre = txtNombreEspecialidad.Text;
+
+                int modificar= DacEspecialidad.ModificarEspecialidad(id);
+                
+                if (modificar > 0)
+                {
+                    MessageBox.Show("Especialidad modificada con éxito");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Id Especialidad no encontrada,intentelo nuevamente");
+            }
+
         }
     }
 }

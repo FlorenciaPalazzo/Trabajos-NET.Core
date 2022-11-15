@@ -40,7 +40,7 @@ namespace MedicoLib.AdminMedico
 
         public static int AgregarMedico(Medico medico)
         {
-            context.Medicos.Add(medico);
+            Medico medicoNuevo= context.Medicos.Add(medico);
             return context.SaveChanges();
         }
 

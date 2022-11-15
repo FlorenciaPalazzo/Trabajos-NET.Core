@@ -220,6 +220,7 @@
             this.btnEliminarEspecialidad.TabIndex = 21;
             this.btnEliminarEspecialidad.Text = "Eliminar";
             this.btnEliminarEspecialidad.UseVisualStyleBackColor = true;
+            this.btnEliminarEspecialidad.Click += new System.EventHandler(this.btnEliminarEspecialidad_Click);
             // 
             // btnModificarEspecialidad
             // 
@@ -229,6 +230,7 @@
             this.btnModificarEspecialidad.TabIndex = 22;
             this.btnModificarEspecialidad.Text = "Modificar";
             this.btnModificarEspecialidad.UseVisualStyleBackColor = true;
+            this.btnModificarEspecialidad.Click += new System.EventHandler(this.btnModificarEspecialidad_Click);
             // 
             // btnAgregarEspecialidad
             // 

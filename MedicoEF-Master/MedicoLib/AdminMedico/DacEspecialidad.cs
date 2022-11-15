@@ -27,7 +27,7 @@ namespace MedicoLib.AdminMedico
 
         public static int AgregarEspecialidad(Especialidad especialidad)
         {
-            context.Especialidades.Add(especialidad);
+            Especialidad nuevaEspecialidad= context.Especialidades.Add(especialidad);
             return context.SaveChanges();
         }
 
